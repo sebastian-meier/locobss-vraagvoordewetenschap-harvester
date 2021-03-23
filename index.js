@@ -44,11 +44,11 @@ puppeteer
   })
   .then(async (page) => {
     if (start === 0) {
-      await fs.writeFile("urls.json-nd", "", "utf8");
+      await fs.writeFile("./exports/urls.json-nd", "", "utf8");
     }
     for (let i = start; i <= limit; i += 1) {
       const result = await getUrls(page, i);
-      await fs.appendFile("urls.json-nd", JSON.stringify(result) + "\n");
+      await fs.appendFile("./exports/urls.json-nd", JSON.stringify(result) + "\n");
       process.stdout.write(`${limit} / ${i}\r`);
     }
     return Promise.resolve();

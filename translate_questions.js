@@ -28,12 +28,12 @@ fs.readFile("details.json-nd", "utf8")
     });
 
     for (let ti = 0; ti < translations.length; ti += 1) {
-      const result = await translate.translate(translations[ti].original, "en");
-      details[translations[ti].id][translations[ti].key + "_en"] = result;
+      const result = await translate.translate(translations[ti].original, "de");
+      details[translations[ti].id][translations[ti].key + "_de"] = result;
       process.stdout.write(`${translations.length} / ${ti}\r`);
     }
 
-    return fs.writeFile("questions.json", JSON.stringify(details), "utf8");
+    return fs.writeFile("questions_de.json", JSON.stringify(details), "utf8");
   })
   .then(() => {
     console.log("done");

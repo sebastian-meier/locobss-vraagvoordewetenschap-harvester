@@ -3,7 +3,7 @@ const fs = require("fs").promises;
 
 // TODO: 2351 Duplicate
 
-const start = 4153;
+const start = 0;
 
 const getUrls = (page, pageUrl) => {
   return new Promise(async (resolve, reject) => {
