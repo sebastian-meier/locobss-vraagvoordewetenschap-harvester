@@ -1,3 +1,5 @@
+This repo is part of the LoCobSS research project. More details about the project and dependencies to other repos can be found [here](https://github.com/sebastian-meier/LoCobSS-documentation).
+
 # vraagvoordewetenschap-scraper
 For a research project we needed sample data for research questions from the public. Belgium conducted such a survey: https://www.vraagvoordewetenschap.be
 The tools in this repo harvest the questions, translate them and upload them to a mysql database.
